@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrel & Brew</title>
+    <link rel="stylesheet" href="http://192.168.10.69/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://192.168.10.69/css/mycss.css">
+    <link rel="stylesheet" href="http://192.168.10.69/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .box03 {
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px #ccc;
+            border-radius: 8px;
+        }
+
+        .box03 .h4 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .s05-text,
+            .s08-text {
+                z-index: 10;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: var(--mycolor01);
+                margin: 15px;
+                box-shadow: 2px 2px 4px 2px #fafafa;
+                border-radius: 15px;
+                padding: 15px;
+            }
+
+        }
+
+        .s12-text {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+
+        .timeline-section::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            background-color: var(--mycolor02);
+            top: 0;
+            bottom: 0;
+            left: 61%;
+            transform: translateX(90%);
+        }
+
+        .timeline-section-pointer {
+            position: relative;
+        }
+
+        .timeline-section-pointer::before {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: var(--mycolor04);
+            top: 35%;
+            left: 49%;
+            border-radius: 50%;
+            border: 5px solid var(--mycolor01);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- section02 -->
+    <section id="s02" class="bg-010">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg bg-010">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="fa-solid fa-champagne-glasses fa-1x m-auto me-2"
+                            style="color: var(--mycolor13);"></i><i class="fa-solid fa-1x m-auto">
+                            <span style="color: var(--mycolor13);">Barrel & Brew</span> </i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color:var(--mycolor13);" aria-current="page"
+                                    href="#">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: var(--mycolor13);" href="#s04">企業宗旨</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: var(--mycolor13);" href="#s05">產品介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: var(--mycolor13);" href="#s06">關於公司</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: var(--mycolor13);" href="#s07">團隊介紹</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: var(--mycolor10);">
+                                    <span style="color: var(--mycolor13);">其他資訊</span>
+                                </a>
+                                <ul class="dropdown-menu bg-010">
+                                    <li><a class="dropdown-item bg-010" href="#s08"><span
+                                                style="color: var(--mycolor13);">優惠專區</span></a></li>
+                                    <li><a class="dropdown-item bg-010" href="#s09"><span
+                                                style="color: var(--mycolor13);">附近銷售點</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown d-none" id="s02_member_btn">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: var(--mycolor10);">
+                                    <span style="color: var(--mycolor13);">地圖專區</span>
+                                </a>
+                                <ul class="dropdown-menu bg-010">
+                                    <li><a class="dropdown-item bg-010" href="SPA_member_control_panel.html"><span
+                                                style="color: var(--mycolor13);">會員中心</span></a></li>
+                                    <li><a class="dropdown-item bg-010" href="20250204-maskmap_v1.html"><span
+                                                style="color: var(--mycolor13);">口罩地圖</span></a></li>
+                                    <li><a class="dropdown-item bg-010" href="20250208-youbikemap_v1.html"><span
+                                                style="color: var(--mycolor13);">單車地圖</span></a></li>
+                                    <li><a class="dropdown-item bg-010" href="20250208-hotelmap_v1.html"><span
+                                                style="color: var(--mycolor13);">旅館地圖</span></a></li>
+                                    <li><a class="dropdown-item bg-010" href="20250208-member-test01_v1.html"><span
+                                                style="color: var(--mycolor13);">表格統計</span></a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                        <div>
+                            <span class="h3 mx-3 d-none" style="color: var(--mycolor13)" id="s02_username_showtext">會員:
+                                <span class="h3" style="color: var(--mycolor12);"
+                                    id="s02_username_text">XXX</span></span>
+                            <botton class="btn bg-013 d-none" data-bs-toggle="modal" data-bs-target="#logoutModal"
+                                id="s02_logout_btn">
+                                <span style="color: whitesmoke;">登出</span>
+                            </botton>
+                            <botton class="btn bg-012" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                id="s02_reg_btn">
+                                <span style="color: whitesmoke;">註冊</span>
+                            </botton>
+                            <botton class="btn bg-011" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                id="s02_login_btn">
+                                <span style="color: whitesmoke;">登入</span>
+                            </botton>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- registerModal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-003">
+                    <h1 class="modal-title fs-4 fw-900 text-light" id="exampleModalLabel">註冊</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex flex-column h-100">
+                                <div class="display-6 fw900 mt-2 my-5">會員守則</div>
+                                <p>1.註冊會員時，請提供正確、完整的個人資料。不得冒用他人身份或提供虛假資訊，如有違反，本站保留刪除帳號的權利。</p>
+                                <p>2.請妥善保管您的帳號及密碼，避免與他人共用。如有發現帳號異常或被盜用，請立即聯繫客服以維護您的權益。</p>
+                                <p>3.使用網站時，禁止不當或侵害他人權益的內容，不得進行任何破壞系統或影響其他用戶的行為。</p>
+                                <p>4.會員應遵守本網站的相關規定及當地法律，若有違規行為，本站有權採取適當措施，包括但不限於暫停或終止會員資格。</p>
+                                <div class=" form-check form-switch mt-auto">
+                                    <input type="checkbox" class="form-check-input" role="switch" id="chk01"
+                                        name="chk01">
+                                    <label for="chk01" class="form-check-label">不同意</label>
+                                    <div class="valid-feedback">.</div>
+                                    <div class="invalid-feedback">須同意後才能註冊</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="acnt" class="form-label">帳號</label>
+                                <input type="text" class="form-control is-invalid" id="username_reg" name="username_reg"
+                                    placeholder="3~6字">
+                                <div class="valid-feedback" id="regModal_username_valid_feedback">符合</div>
+                                <div class="invalid-feedback" id="regModal_username_invalid_feedback">不符合</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="psw" class="form-label">密碼</label>
+                                <input type="password" class="form-control is-invalid" id="password_reg"
+                                    name="password_reg" placeholder="3~6字">
+                                <div class="valid-feedback">符合</div>
+                                <div class="invalid-feedback">不符合</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chpwd" class="form-label">確認密碼</label>
+                                <input type="password" class="form-control is-invalid" id="re_password_reg"
+                                    name="re_password_reg">
+                                <div class="valid-feedback">符合</div>
+                                <div class="invalid-feedback">不符合</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="eml" class="form-label">Email</label>
+                                <input type="text" class="form-control is-invalid" id="email_reg" name="email_reg"
+                                    placeholder="3~15字">
+                                <div class="valid-feedback">符合</div>
+                                <div class="invalid-feedback">不符合</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-001" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn bg-012" id="ok_btn_reg">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- loginModal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-003">
+                    <h1 class="modal-title fs-4 fw-900 text-light" id="exampleModalLabel">登入</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="form-label">帳號</label>
+                        <input type="text" class="form-control is-invalid" id="username_login" name="username_login">
+                        <div class="invalid-feedback">請輸入帳號</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-label">密碼</label>
+                        <input type="password" class="form-control is-invalid" id="password_login"
+                            name="password_login">
+                        <div class="invalid-feedback">請輸入密碼</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-001" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn bg-012" id="ok_btn_login">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section03 -->
+    <section id="s03">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item bg-cover active "
+                    style="height: 90vh; background-image: url(image/beer01.jpg); background-size: cover; background-position: center;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                        <h3 class="fw-900">熱銷<span style="color: var(--mycolor02);">第一</span>: India Pale Ale</h3>
+                        <p class="fs-5 text-light">
+                            特點：
+                            濃郁的啤酒花香氣，帶有柑橘、松針或熱帶水果的味道。
+                            苦味明顯，酒精濃度通常較高（5.5%-7.5%）。
+                            適合搭配： 烤肉、香辣食物或濃味芝士。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover active img-fluid"
+                    style="height: 90vh; background-image: url(image/beer02.jpg);">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                        <h3 class="fw-900">熱銷<span style="color: var(--mycolor02);">第二</span>: Lager</h3>
+                        <p class="fs-5 text-light">
+                            特點 :
+                            清爽的口感，風味較淡且平衡，常帶有麥芽和少量啤酒花的香氣。
+                            酒精濃度適中（4%-5.5%），適合大眾口味。
+                            適合搭配： 比薩、漢堡、炸雞等休閒美食。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover active"
+                    style="height: 90vh; background-image: url(image/beer03.jpg);">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                        <h3 class="fw-900">熱銷<span style="color: var(--mycolor02);">第三</span>: Belgian Dubbel</h3>
+                        <p class="fs-5 text-light">
+                            特點 :
+                            味道複雜，帶有焦糖、香料和水果的層次感。
+                            酒精濃度偏高（6.5%-9%），口感濃郁厚實。
+                            適合搭配： 燉肉、巧克力甜點或濃味奶酪。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover active"
+                    style="height: 90vh; background-image: url(image/beer04.jpg);">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                        <h3 class="fw-900">熱銷<span style="color: var(--mycolor02);">第四</span>: Stout</h3>
+                        <p class="fs-5 text-light">
+                            特點 :
+                            黑啤的一種，顏色深邃，帶有濃郁的咖啡、巧克力或焦糖風味。
+                            酒體厚實，口感滑順，酒精濃度多為4%-7%。
+                            適合搭配： 烤牛肉、甜點（如提拉米蘇）。
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover active"
+                    style="height: 90vh; background-image: url(image/beer05.jpg);">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
+                        <h3 class="fw-900">熱銷<span style="color: var(--mycolor02);">第五</span>: Wheat Bee</h3>
+                        <p class="fs-5 text-light">
+                            特點 :
+                            使用大量小麥釀造，口感輕盈柔和，帶有柑橘或香料的清新味道。
+                            酒精濃度通常為4%-5.5%，非常適合夏季飲用。
+                            適合搭配： 沙拉、海鮮或輕食。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- section13 企業相關數據呈現 -->
+    <section id="s13" class="bg-010">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-5 bg-cover" style="background-image: url(image/beer06.jpg); height: 700px;"></div>
+                <div class="col-7 p-5 text-center">
+                    <div class="h1 fw-900" style="color: var(--mycolor13);">百年匠心，品質傳承</span></div>
+                    <div class="h1 fw-900 mb-5 "><span style="color: var(--mycolor13);">全球認可的</span><span
+                            style="color: var(--mycolor11);">金牌品質</span></div>
+                    <p class="mb-2" style="color: var(--mycolor13);">自<span
+                            style="color: var(--mycolor12);">1897</span><span
+                            style="color: var(--mycolor13);">年以來，始終堅持對啤酒工藝的極致追求。</span></p>
+                    <p class="mb-2" style="color: var(--mycolor13);">創始人以對啤酒的熱愛為起點，從一個小型釀酒廠開始，逐漸發展為今天全球啤酒行業的領導品牌之一。</p>
+                    <p class="mb-2" style="color: var(--mycolor13);">我們相信，每一瓶啤酒都能連結人與人之間的美好情感。無論是在派對、家庭聚會還是個人放鬆時刻，Barrel
+                        & Brew的啤酒都將是您值得信賴的最佳選擇。</p>
+                    <div class="row mt-5">
+                        <div class="col-md-3 ">
+                            <div class="h4 fw-900" style="color: var(--mycolor13);">年均銷量</div>
+                            <div class="h2 fw-900 counter01"><span style="color: var(--mycolor12);">4326715</span>
+                                <span class="h4" style="color: var(--mycolor13);">瓶</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="h4 fw-900" style="color: var(--mycolor13);">總獲獎數目</div>
+                            <div class="h2 fw-900 counter02"><span style="color: var(--mycolor12);">32</span> <span
+                                    class="h4" style="color: var(--mycolor13);">座</span></div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="h4 fw-900" style="color: var(--mycolor13);">專利認證</div>
+                            <div class="h2 fw-900 counter03"><span style="color: var(--mycolor12);">15</span> <span
+                                    class="h4" style="color: var(--mycolor13);">項</span></div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="h4 fw-900" style="color: var(--mycolor13);">全球據點</div>
+                            <div class="h2 fw-900 counter04"><span style="color: var(--mycolor12);">48</span> <span
+                                    class="h4" style="color: var(--mycolor13);">處</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section04 企業宗旨-->
+    <section id="s04" class="bg-014">
+        <div class="container">
+            <div class="row">
+                <div class="display-5 fw-900 text-center mt-5" style="color: var(--mycolor13);">企業宗旨</div>
+                <div class="col-md-4 text-center my-4">
+                    <i class="fa-regular fa-thumbs-up fa-5x d-none d-md-block" style="color: var(--mycolor13);"></i>
+                    <h2 class=" fw-900 my-3" style="color: var(--mycolor13);">品質承諾</h2>
+                    <p>堅守最優質的原材料，確保每一瓶啤酒的純粹與完美。</p>
+                </div>
+                <div class="col-md-4 text-center my-4">
+                    <i class="fa-brands fa-pagelines fa-5x d-none d-md-block" style="color: var(--mycolor13);"></i>
+                    <h2 class=" fw-900 my-3" style="color: var(--mycolor13);">環保與可持續發展</h2>
+                    <p>減少碳足跡，致力於打造綠色釀造產業。</p>
+                </div>
+                <div class="col-md-4 text-center my-4">
+                    <i class="fa-regular fa-handshake fa-5x  d-none d-md-block" style="color: var(--mycolor13);"></i>
+                    <h2 class=" fw-900 my-3" style="color: var(--mycolor13);">社區貢獻</h2>
+                    <p>支持當地產業，促進經濟發展，並積極參與公益活動。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section05 內容介紹-->
+    <section id="s05" class="bg-010">
+        <div class="container">
+            <div class="row">
+                <div class="display-5 fw-900 text-center mt-5 my-5" style="color: var(--mycolor13);">產品介紹</div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd1.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center">Heritage Lager</div>
+                        <p class="fw-600">
+                            類型： 經典拉格啤酒<br>
+                            ABV（酒精濃度）： 5.0%<br>
+                            風味特點：
+                            這款經典的黃金拉格散發著濃郁的麥芽香氣，入口清爽，啤酒花帶來微妙的草本餘韻。它是傳統與現代的完美結合，適合任何場合。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd2.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center"> Citrus Haze IPA</div>
+                        <p class="fw-600">
+                            類型： 雙重乾投IPA<br>
+                            ABV（酒精濃度）： 6.5%<br>
+                            風味特點：
+                            濃烈的柑橘與熱帶水果香氣撲鼻而來，搭配柔滑的酒體和清爽的苦味平衡，為 IPA 愛好者提供極致享受。這是一款令人印象深刻的現代 IPA。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd3.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center">Oak Aged Stout</div>
+                        <p class="fw-600">
+                            類型： 橡木桶熟成世濤<br>
+                            ABV（酒精濃度）： 8.0%<br>
+                            風味特點：
+                            濃郁的深色啤酒，融合了巧克力、濃縮咖啡和香草的香氣，並帶有橡木桶熟成的微妙煙燻氣息。這款酒體厚實的世濤是收藏和細品的上佳之選。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd4.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center"> Berry Bliss Wheat Beer</div>
+                        <p class="fw-600">
+                            類型： 水果風味小麥啤酒<br>
+                            ABV（酒精濃度）： 4.8%<br>
+                            風味特點：
+                            清新的小麥基調與莓果的甜酸交織在一起，帶來一種輕盈且活潑的口感，完美適合夏季或任何想要放鬆的時刻。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd5.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center">Amber Ridge Ale</div>
+                        <p class="fw-600">
+                            類型： 琥珀艾爾<br>
+                            ABV（酒精濃度）： 5.7%<br>
+                            風味特點：
+                            這款艾爾以焦糖化的麥芽香氣和微妙的堅果風味為特色，搭配淡淡的啤酒花香，帶來溫暖且圓潤的口感。適合秋冬季的慢飲享受。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box03 myrollerl">
+                        <div class="rollerl">
+                            <a href="#" class="d-none d-lg-block btn bg-012"><span
+                                    style="color: var(--mycolor14);">查看更多</span></a>
+                        </div>
+                        <img src="image/pd6.jpg" class="img-fluid" alt="">
+                        <div class="h4 fw-900 text-center">Tropical Breeze Pilsner</div>
+                        <p class="fw-600">
+                            類型： 熱帶風味皮爾森啤酒<br>
+                            ABV（酒精濃度）： 4.9% <br>
+                            風味特點： 清脆的皮爾森啤酒加入熱帶水果如菠蘿與百香果的香氣，帶來異域風情的清爽體驗，是派對和沙灘聚會的必備之選。
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section06  關於公司-->
+    <section id="s06" class="position-relative  bg-014">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-7 s08-text">
+                    <dl class="row">
+                        <dt class="col-sm-3 my-5" style="color: var(--mycolor13);">Barrel & Brew：匠心釀造，品味生活
+                        </dt>
+                        <dd class="col-sm-9 my-5 " style="color: var(--mycolor13);">創立於： 1897年，總部： 美國奧勒岡州波特蘭</dd>
+
+                        <dt class="col-sm-3" style="color: var(--mycolor13);">品牌故事：回歸初心，釀造藝術</dt>
+                        <dd class="col-sm-9" style="color: var(--mycolor13);">
+                            <p>Barrel & Brew
+                                的誕生源於一群對啤酒充滿熱情的朋友，他們希望將手工釀造與現代創意結合，打造出既能體現傳統又富有時代感的啤酒。創始人將「酒桶」（Barrel）象徵百年傳承的熟成技術，「釀造」（Brew）代表每一杯啤酒的獨特靈魂，從而成就了
+                                Barrel & Brew 這個名字。</p>
+
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-5 position-absolute bottom-0 top-0 bg-cover"
+                style="background-image: url(image/godtone.jpg);"></div>
+        </div>
+
+    </section>
+
+    <!-- section12  準備流程-->
+    <section id="s12" class="bg-secondary py-5 bg-cover "
+        style="background-image: url(image/icon.jpg); background-attachment: fixed;">
+
+        <div class="timeline-section">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="row col-md-3 align-items-center">
+                        <div class="s12-text">
+                            <div class="h1" style="color: var(--mycolor11);">Barrel & Brew 的里程碑成就</div>
+                            <p class="text-white fs-5">
+                                為什麼選擇 Barrel & Brew？
+                                因為我們相信，啤酒不僅僅是一種飲品，更是一種生活方式的象徵。無論是朋友聚會、家庭歡樂時光，還是獨自品味寧靜，Barrel & Brew 都將成為您最忠實的陪伴。
+
+                                來加入我們，品味世界級的啤酒，創造屬於你的珍藏時刻！
+                                Barrel & Brew——釀造每一天的美好。</p>
+                        </div>
+                    </div>
+
+                    <div class="row col-md-8">
+                        <div class="row align-items-center timeline-section-pointer">
+                            <div class="col-md-6">
+                                <div class="s12-text text-white rounded-3 shadow-lg">
+                                    <h2 style="color: var(--mycolor11);">1905 - 第一款經典啤酒誕生</h2>
+                                    <p>推出品牌首款經典拉格啤酒——Heritage Lager，這款啤酒以其純正麥芽風味和清爽口感，奠定了 Barrel & Brew 的核心產品地位。</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="s12-image bg-cover "
+                                    style="height: 220px;background-image: url(image/1905.jpg);"></div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+                            <div class="col-md-6">
+                                <div class="s12-text text-white rounded-3 shadow-lg">
+                                    <h2 style="color: var(--mycolor11);">2010 - 環保釀造</h2>
+                                    <p>在品牌成立113周年之際，公司宣布全面採用可再生能源和節水技術，成為行業內可持續釀造的領先者。</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="s12-image bg-cover"
+                                    style="height: 220px;background-image: url(image/2010.jpg);"></div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center timeline-section-pointer">
+                            <div class="col-md-6">
+                                <div class="s12-text text-white rounded-3 shadow-lg">
+                                    <h2 style="color: var(--mycolor11);">2020 - 百國銷售</h2>
+                                    <p>Barrel & Brew 的產品正式進入全球100多個國家和地區銷售，彰顯其作為國際品牌的市場影響力。</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="s12-image bg-cover img-fluid"
+                                    style="height: 220px;background-image: url(image/2020.jpg);"></div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+                            <div class="col-md-6">
+                                <div class="s12-text text-white rounded-3 shadow-lg">
+                                    <h2 style="color: var(--mycolor11);">2023 - 榮獲全球啤酒大獎</h2>
+                                    <p>Oak Aged Stout 獲得「世界最佳世濤啤酒獎」，再次證明了品牌對品質的追求與創新實力。</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="s12-image bg-cover"
+                                    style="height: 220px;background-image: url(image/2023.jpg);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section07 團隊介紹-->
+    <section id="s07" class="bg-010">
+        <div class="container ">
+            <div class="display-4 fw-900 text-center py-3" style="color: var(--mycolor13);">團隊介紹</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row align-items-center wow animate__slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0s" data-wow-iteration="1">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-cover"
+                                style="width: 150px;height: 150px; background-image: url(image/person1.jpg);"></div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h3 fw-800 my-3" style="color: var(--mycolor13);">創辦人：威廉·巴雷爾（William Barrel）
+                            </div>
+                            <p style="color: var(--mycolor13);">1897
+                                年創立公司，專注於融合傳統與現代的釀酒技術。他是一位熱愛自然和手工藝的匠人，以對品質的追求而著稱。</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="row align-items-center wow animate__slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0s" data-wow-iteration="1">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-cover"
+                                style="width: 150px;height: 150px; background-image: url(image/person2.jpg);"></div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h3 fw-800 my-3" style="color: var(--mycolor13);">CEO：艾琳娜·布魯克（Elena Brook）</div>
+                            <p style="color: var(--mycolor13);">史丹佛管理學博士畢業，專長於品牌國際化和市場營銷，帶領公司進軍全球市場。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row align-items-center wow animate__slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0s" data-wow-iteration="1">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-cover"
+                                style="width: 120px;height: 120px; background-image: url(image/person3.jpg);"></div>
+                        </div>
+
+                        <div class="col-8">
+                            <div class="h3 fw-800 my-3" style="color: var(--mycolor13);">首席釀酒師：喬納森·凱恩（Jonathan Kane）
+                            </div>
+                            <p style="color: var(--mycolor13);">有 25 年釀酒經驗，專注於創新啤酒配方和可持續釀造技術。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row align-items-center wow animate__slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0s" data-wow-iteration="1">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-cover"
+                                style="width: 120px;height: 120px; background-image: url(image/person4.jpg);"></div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h3 fw-800 my-3" style="color: var(--mycolor13);">營銷總監：蘇菲·李（Sophie Lee）</div>
+                            <p style="color: var(--mycolor13);">擁有多元文化背景，擅長數字營銷與品牌推廣策略，成功推出多款經典啤酒廣告。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row align-items-center wow animate__slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0s" data-wow-iteration="1">
+                        <div class="col-4">
+                            <div class="bg-info rounded-circle bg-cover"
+                                style="width: 120px;height: 120px; background-image: url(image/person5.jpg);"></div>
+                        </div>
+                        <div class="col-8">
+                            <div class="h3 fw-800 my-3" style="color: var(--mycolor13);">財務總監：彼得·克拉克（Peter Clark）</div>
+                            <p style="color: var(--mycolor13);">擁有豐富的財務與風險管理經驗，確保公司財務穩健並支持新產品開發。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section08 優惠專區-->
+    <section id="s08" class="position-relative bg-014">
+        <div class="container ">
+            <div class="row">
+                <div class="display-5 fw-900 text-center my-5" style="color: var(--mycolor13);">優惠專區</div>
+                <div class="col-md-4">
+                    <dl class="row">
+                        <dt class="col-sm-4" style="color: var(--mycolor13);">會員專屬優惠</dt>
+                        <dd class="col-sm-8">註冊會員即享 首單 20% 折扣！<br>
+                            再送 精美限量啤酒杯 一個。</dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 ">
+                    <dl class="row">
+                        <dt class="col-sm-4" style="color: var(--mycolor13);">滿額贈禮活動</dt>
+                        <dd class="col-sm-8">購買滿 $100，即贈 經典 Heritage Lager（500ml） 一瓶。</dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4 ">
+                    <dl class="row">
+                        <dt class="col-sm-4" style="color: var(--mycolor13);">推薦好友禮</dt>
+                        <dd class="col-sm-8">每推薦一位好友成功下單，雙方均可獲得 $10 優惠券！</dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-10 mt-3">
+                    <dl class="row">
+                        <dt class="col-sm-2" style="color: var(--mycolor13);">如何參與優惠活動？</dt>
+                        <dd class="col-sm-10">前往官方網站或指定零售店購買。<br>
+                            訂閱電子報，第一時間獲取最新優惠與新品資訊。<br>
+                            關注我們的社交媒體（Instagram、Facebook），了解更多活動細節！</dd>
+                    </dl>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section09 查找附近銷售點-->
+    <section id="s09" class="bg-010">
+        <div class="container">
+            <div class="row">
+                <div class="display-5 fw-900 text-center py-5" style="color: var(--mycolor13);">附近銷售點</div>
+                <div class="col-md-6">
+                    <div class=" fw-300 text-start" style="color: var(--mycolor13);">公司地址:</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1972779059283!2d120.59652697642996!3d24.16481317273849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e15c4a6417f%3A0x2dc823981e8008be!2z5Y-w54Gj6I-46YWS6IKh5Lu95pyJ6ZmQ5YWs5Y-46Ie65Lit6YWS5bug!5e0!3m2!1sen!2stw!4v1736404687329!5m2!1sen!2stw"
+                        class="mb-5" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 py-4">
+
+                    <div class="mb-3">
+                        <select name="selectCity" id="selectCity" class="form-select form-select-lg">
+                            <option value="" class="text-center" selected disabled>---選擇縣市名稱---</option>
+                            <option value="">台中市</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select name="selectArea" id="selectArea" class="form-select form-select-lg">
+                            <option value="" class="text-center" selected disabled>---選擇鄉鎮區名稱---</option>
+                            <option value="">西屯區</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="X路X段X號.......">
+                    </div>
+                    <div class="mt-auto">
+                        <button class="btn bg-012">
+                            <span class="text-white">搜尋</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section10 聯絡我們-->
+    <section id="s10" class="bg-013">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 bg-cover" style="background-color: var(--mycolor13);">
+                    <div class="row ">
+                        <div class="col-md-9 m-3">
+                            <div class="h2 fw-900 my-1" style="color: var(--mycolor10);">聯絡我們</div>
+                            <p class=" mt-3" style="color: var(--mycolor10);">
+
+                                電子郵件：support@barrelandbrew.com<br>
+                                電話：+1-800-BNB-BEER<br>
+                                地址：Barrel & Brew HQ, 1897 Heritage St., Craftsville
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-cover" style="background-color: var(--mycolor13);">
+                    <div class="row ">
+                        <div class="col-md-9 m-3">
+
+                            <div class="h2 fw-900 my-1" style="color: var(--mycolor10);">快速導航</div>
+                            <p class=" mt-3" style="color: var(--mycolor10);">
+                                <a href="" style="color: var(--mycolor10); text-decoration: none;">常見問題</a><br>
+                                <a href="" style="color: var(--mycolor10); text-decoration: none;">條款與隱私政策</a><br>
+                                <a href="" style="color: var(--mycolor10); text-decoration: none;">退換貨政策</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section11 友善連結-->
+    <section id="s12" class="bg-010">
+        <div class="container">
+            <div class="row bg-010">
+                <ul class="nav bg-010">
+                    <li class="nav-item">
+                        <a class="nav-link disabled">PowerBy 雲端班2024.12</a>
+                    </li>
+                    <li class="nav-item align-content-center m-auto">
+                        <a href=""><i class="fa-brands fa-square-facebook text-primary"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter text-dark"></i></a>
+                        <a href=""><i class="fa-brands fa-line text-success"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram text-warning"></i></a>
+                        <a href=""><i class="fa-brands fa-square-threads text-dark"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+    </section>
+    </div>
+
+    <script src="http://192.168.10.69/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="http://192.168.10.69/js/jquery-3.7.1.min.js"></script>
+    <script src="http://192.168.10.69/js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/cookie.js"></script>
+
+    <script>
+        var city;
+        var selectedCity; //紀錄所選縣市名稱
+        var selectedArea;
+        var flag_username_reg = false;
+        var flag_password_reg = false;
+        var flag_re_password_reg = false;
+        var flag_email_reg = false;
+        var flag_chk01_reg = false;
+        var flag_username_login = false;
+        var flag_password_login = false;
+
+        $(function () {
+            //wowjs
+            new WOW().init();
+
+            //conterup02
+            const counterUp = window.counterUp.default
+
+            const callback = entries => {
+                entries.forEach(entry => {
+                    const el = entry.target
+                    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                        counterUp(el, {
+                            duration: 2000,
+                            delay: 16,
+                        })
+                        el.classList.add('is-visible')
+                    }
+                })
+            }
+
+            const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+            const el01 = document.querySelector('.counter01')
+            IO.observe(el01)
+
+            const el02 = document.querySelector('.counter02')
+            IO.observe(el02)
+
+            const el03 = document.querySelector('.counter03')
+            IO.observe(el03)
+
+            const el04 = document.querySelector('.counter04')
+            IO.observe(el04)
+
+            //section 09 客戶需求表單 -->縣市選單
+
+            //載入縣市資料
+            $.ajax({
+                type: "GET",
+                url: "js/CityCountyData.json",
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    console.log(data);
+                    city = data;
+                },
+                error: function () {
+                    console.log("error-js/CityCountyData.json");
+                }
+            });
+
+            console.log(city);
+
+            //顯示縣市選單
+            $("#selectCity").empty();
+            $("#selectCity").append('<option value="" class="text-center" selected disabled>---選擇縣市名稱---</option>');
+            city.forEach(function (item) {
+                console.log(item.CityName);
+
+                var strHTML = `<option value="${item.CityName}">${item.CityName}</option>`;
+                $("#selectCity").append(strHTML);
+            });
+
+
+            //監聽縣市選單
+            $("#selectCity").change(function () {
+                console.log($(this).val());
+                selectedCity = $(this).val();
+
+
+                city.forEach(function (item) {
+                    if (item.CityName == selectedCity) {
+                        //產生鄉鎮區選單
+                        $("#selectArea").empty();
+                        $("#selectArea").append('<option value="" class="text-center" selected disabled>---選擇鄉鎮區名稱---</option>');
+                        item.AreaList.forEach(function (myitem) {
+                            console.log(myitem.AreaName);
+
+                            var strHTML = `<option value="${myitem.AreaName}">${myitem.AreaName}</option>`;
+                            $("#selectArea").append(strHTML);
+
+                        });
+                    }
+                });
+            });
+        });
+
+        //確認uid01是否存在
+        if (getCookie("Uid01")) {
+            //將uid01傳遞至後端API執行驗證
+            //input{"uid01" : "0d0709d1"}
+            var JSONdata = {};
+            JSONdata["uid01"] = getCookie("Uid01");
+            console.log(JSON.stringify(JSONdata));
+
+            $.ajax({
+                type: "POST",
+                url: "member_control_api_v1.php?action=checkuid",
+                data: JSON.stringify(JSONdata),
+                dataType: "json",
+                success: showdata_checkuid,
+                error: function () {
+                    Swal.fire({
+                        title: "API介接錯誤",
+                        text: "member_control_api_v1.php?action=check",
+                        icon: "error"
+                    });
+                }
+            })
+
+        } else {
+            Swal.fire({
+                title: "請先登入會員",
+                icon: "info",
+                allowOutsideClick: false,
+            });
+        }
+
+        $("#username_reg").bind("input propertychange", function () {
+            if ($(this).val().length > 2 && $(this).val().length < 7) {
+
+                //傳遞至後端確認用戶名是否可以使用
+                //input:{"username" : "xxxxxx"}
+                var JSONdata = {};
+                JSONdata["username"] = $("#username_reg").val();
+                console.log(JSON.stringify(JSONdata));
+
+                $.ajax({
+                    type: "POST",
+                    url: "member_control_api_v1.php?action=checkuni",
+                    data: JSON.stringify(JSONdata),
+                    dataType: "json",
+                    success: showdata_checkuni,
+                    error: function () {
+                        Swal.fire({
+                            title: "API介接錯誤",
+                            text: "member_control_api_v1.php?action=checkuni",
+                            icon: "error"
+                        });
+                    }
+                });
+
+            } else {
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                $("#regModal_username_invalid_feedback").text("不符合");
+                flag_username_reg = false;
+            }
+        });
+
+        $("#password_reg").bind("input propertychange", function () {
+
+            $("#re_password_reg").removeClass("is-valid");
+            $("#re_password_reg").addClass("is-invalid");
+            if ($(this).val().length > 2 && $(this).val().length < 7) {
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_password_reg = true;
+            } else {
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_password_reg = false;
+            }
+        });
+
+        $("#re_password_reg").bind("input propertychange", function () {
+            if (flag_password_reg && $(this).val() === $("#password_reg").val()) {
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_re_password_reg = true;
+            } else {
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_re_password_reg = false;
+            }
+        });
+
+        $("#email_reg").bind("input propertychange", function () {
+            if ($(this).val().length > 2 && $(this).val().length < 25) {
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_email_reg = true;
+            } else {
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_email_reg = false;
+            }
+        });
+
+        $("#chk01").change(function () {
+            console.log($(this).is(':checked'));
+            if ($(this).is(':checked')) {
+                $(this).next().text("同意");
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_chk01_reg = true;
+            } else {
+                $(this).next().text("不同意");
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_chk01_reg = false;
+            }
+        });
+
+        $("#username_login").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                $(this).removeClass("is-invalid");
+                flag_username_login = true;
+            } else {
+                $(this).addClass("is-invalid");
+                flag_username_login = false;
+            }
+        });
+
+        $("#password_login").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                $(this).removeClass("is-invalid");
+                flag_password_login = true;
+            } else {
+                $(this).addClass("is-invalid");
+                flag_password_login = false;
+            }
+        });
+
+        $("#ok_btn_reg").click(function () {
+            if (flag_chk01_reg && flag_email_reg && flag_password_reg && flag_re_password_reg && flag_username_reg) {
+
+                var JSONdata = {};
+                JSONdata["username"] = $("#username_reg").val();
+                JSONdata["password"] = $("#password_reg").val();
+                JSONdata["email"] = $("#email_reg").val();
+                console.log(JSON.stringify(JSONdata));
+
+                $.ajax({
+                    type: "POST",
+                    url: "member_control_api_v1.php?action=register",
+                    data: JSON.stringify(JSONdata),
+                    dataType: "json",
+                    success: showdata_reg,
+                    error: function () {
+                        Swal.fire({
+                            title: "API介接錯誤",
+                            text: "member_control_api_v1.php?action=register",
+                            icon: "error"
+                        });
+                    }
+
+                });
+
+            } else {
+                Swal.fire({
+                    title: "欄位有誤，請修正",
+                    icon: "warning",
+                    showCancelButton: false,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "確認"
+                }).then((result) => {
+                    // if (result.isConfirmed) {
+                    //     console.log($(this).data("id"));
+                    //     //傳送至後端API執行刪除行為
+                    //     //input: {"id":"xxx"}
+
+                    //     Swal.fire({
+                    //         title: "刪除成功",
+                    //         text: "此筆資料已被刪除",
+                    //         icon: "success"
+                    //     });
+                    // }
+                });
+            }
+        });
+
+        $("#ok_btn_login").click(function () {
+            if (flag_username_login && flag_password_login) {
+                //傳遞後端API執行登入行為
+                //input :　{"username" : "owner01", "password" : "123456"}
+                var JSONdata = {};
+                JSONdata["username"] = $("#username_login").val();
+                JSONdata["password"] = $("#password_login").val();
+                console.log(JSON.stringify(JSONdata));
+
+                $.ajax({
+                    type: "POST",
+                    url: "member_control_api_v1.php?action=login",
+                    data: JSON.stringify(JSONdata),
+                    dataType: "json",
+                    success: showdata_login,
+                    error: function () {
+                        Swal.fire({
+                            title: "API介接錯誤",
+                            icon: "error",
+                        });
+                    }
+
+                });
+
+            } else {
+                Swal.fire({
+                    title: "輸入錯誤",
+                    text: "請輸入帳號密碼",
+                    icon: "error"
+                });
+            }
+        });
+
+
+        function showdata_reg(data) {
+
+            console.log(data);
+            if (data.state) {
+                Swal.fire({
+                    title: data.message,
+                    icon: "success"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        location.href = "SPA-index.html";
+                    }
+                });
+
+            } else {
+                Swal.fire({
+                    title: data.message,
+                    icon: "error"
+                });
+            }
+        }
+
+        function showdata_login(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.state) {
+                    Swal.fire({
+                        title: data.message,
+                        icon: "success"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            //loginModal消失
+                            $("#loginModal").modal("hide");
+
+                            //顯示歡迎訊息
+                            $("#s02_username_showtext").removeClass("d-none");
+                            $("#s02_username_text").text(data.data.Username);
+
+                            //隱藏註冊與登入按鈕
+                            $("#s02_reg_btn").addClass("d-none");
+                            $("#s02_login_btn").addClass("d-none");
+
+                            //顯示登出按鈕
+                            $("#s02_logout_btn").removeClass("d-none");
+
+                            //顯示會員中心按鈕
+                            $("#s02_member_btn").removeClass("d-none");
+
+                            //uid驗證碼寫入cookie
+                            setCookie("Uid01", data.data.Uid01, 7);
+                        }
+                    });
+
+                } else {
+                    Swal.fire({
+                        title: data.message,
+                        icon: "error"
+                    });
+                }
+            }
+        }
+
+        function showdata_checkuid(data) {
+            console.log(data);
+            if (data.state) {
+                //顯示歡迎訊息
+                $("#s02_username_showtext").removeClass("d-none");
+                $("#s02_username_text").text(data.data.Username);
+
+                //隱藏註冊與登入按鈕
+                $("#s02_reg_btn").addClass("d-none");
+                $("#s02_login_btn").addClass("d-none");
+
+                //顯示登出按鈕
+                $("#s02_logout_btn").removeClass("d-none");
+
+                //顯示會員中心按鈕
+                $("#s02_member_btn").removeClass("d-none");
+
+            }
+        }
+
+        function showdata_checkuni(data) {
+            console.log(data);
+            //帳號不存在，可以使用
+            if (data.state) {
+                $("#username_reg").removeClass("is-invalid");
+                $("#username_reg").addClass("is-valid");
+                $("#regModal_username_valid_feedback").text(data.message);
+                flag_username_reg = true;
+                //帳號已存在，不可以使用
+            } else {
+                $("#username_reg").removeClass("is-valid");
+                $("#username_reg").addClass("is-invalid");
+                $("#regModal_username_invalid_feedback").text(data.message);
+                flag_username_reg = false;
+            }
+        }
+
+        //s02_logout_btn 按鈕監聽
+        $("#s02_logout_btn").click(function () {
+            setCookie("Uid01", "", 7);
+            location.href = "SPA-index_v1.html";
+        });
+
+
+    </script>
+</body>
+
+</html>
